@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url(gambar6.jpg);
+        }
+        button {
+            width: 38px;
+            height: 30px;
+        }
+        input {
+            width: 150px;
+            height: 20px;
+            border-color: black;
+        }
+        .calculator {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            top: 200px;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        .operator {
+            background-color: rgb(154, 38, 38);
+        }
+        .equal {
+            background-color: rgb(154, 38, 38);
+        }
+        .clear {
+            background-color: rgb(154, 38, 38);
+        }
+        .angka {
+            color: white;
+            background-color: rgb(24, 23, 23);
+            transition: 1s;
+        }
+        .angka:hover {
+            box-shadow: 5px 5px 30px rgb(24, 23, 23);
+            background-color: white;
+            color: rgb(24, 23, 23);
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="calculator">
+        <table>
+            <tr>
+                <td colspan="4">
+                    <input type="text" id="display" disabled>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="angka" onclick="press('7')">7</button>
+                </td>
+                <td>
+                    <button class="angka" onclick="press('8')">8</button>
+                </td>
+                <td>
+                    <button class="angka" onclick="press('9')">9</button>
+                </td>
+                <td>
+                    <button class="operator" onclick="press('/')">/</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="angka" onclick="press('4')">4</button>
+                </td>
+                <td>
+                    <button class="angka" onclick="press('5')">5</button>
+                </td>
+                <td>
+                    <button class="angka" onclick="press('6')">6</button>
+                </td>
+                <td>
+                    <button class="operator" onclick="press('*')">*</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="angka" onclick="press('1')">1</button>
+                </td>
+                <td>
+                    <button class="angka" onclick="press('2')">2</button>
+                </td>
+                <td>
+                    <button class="angka" onclick="press('3')">3</button>
+                </td>
+                <td>
+                    <button class="operator" onclick="press('-')">-</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="angka" onclick="press('0')">0</button>
+                </td>
+                <td> 
+                    <button class="clear" onclick="press(cleardisplay)">C</button>
+                </td>
+                <td>
+                    <button class="equal" onclick="press(calculate)">=</button>
+                </td>
+                <td>
+                    <button class="operator" onclick="press('+')">+</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        function press(key) {
+            document.getElementById("display").value +=key;
+        }
+    </script>
+
+    
+</body>
+</html>

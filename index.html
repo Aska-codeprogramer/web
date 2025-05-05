@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <style>
+        body {
+            background-image: url(gambar6.jpg);
+        }
+        .list-ul {
+            list-style: none;
+            display: flex;
+        }
+        .list {
+            text-indent: -30px;
+        }
+        .gambar {
+            border-radius: 10px;
+        }
+        .gambar:hover {
+            box-shadow: 5px 5px rgb(17, 16, 16);
+        }
+        .navbar-aska {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 30px;
+            text-indent:10px;
+            cursor: pointer;
+            text-decoration: none;
+            color: rgb(17, 16, 16);
+            transition: 0,5s;
+        }
+        .navbar-aska:hover {
+            color: rgb(17, 16, 16);
+            text-shadow: 5px 5px 30px rgb(17, 16, 16);
+        }
+        .navbar-login {
+            font-weight: bold;
+            font-size: 30px;
+            text-align: right;
+            text-decoration: none;
+            display: flex;
+            color: rgb(17, 16, 16);
+            cursor: pointer;
+            text-indent: 75vw;
+        }
+        .navbar-login:hover {
+            color: rgb(17, 16, 16);
+            text-shadow: 5px 5px 30px rgb(17, 16, 16);
+        }
+        table {
+            border: none;
+            border-collapse: collapse;
+            background-color: rgb(126, 215, 215);
+            border-radius: 20px;
+            position: relative;
+            top: 150px;
+            text-align: center;
+            box-shadow: 0px 0px 70px rgb(126, 215, 215);
+        }
+        td {
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            text-transform: capitalize;
+            font-size: 20px;
+        }
+        .login {
+            text-align: center;
+            font-size: 40px;
+            transition: 0,5s;
+            color: black;
+        }
+        .login:hover {
+            color: black;
+            text-shadow: 10px 10px 50px rgb(26, 25, 25);
+        }
+        input {
+            border-radius: 10px;
+        }
+        .label {
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+        }
+        .label:hover {
+            color:black;
+            text-shadow: 5px 5px 40px white;
+            font-style: italic;
+        }
+        .radio {
+            text-align: center;
+            color:black;
+        }
+        button {
+            color: black;
+            background-color: rgb(190, 54, 54);
+            border-radius: 10px;
+            transition: 0,5s;
+            border: none;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+        button:hover {
+            color: black;
+            background-color: whitesmoke;
+            box-shadow: 10px 20px 40px white;
+            text-shadow: 10px 20px 40px white ;
+        }
+        .hyperlink {
+            color: black;
+            text-decoration: none;
+        }
+        .hyperlink:hover {
+            background-color: whitesmoke;
+            box-shadow: 10px 20px 40px white;
+        }
+
+       
+
+        
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul class="list-ul">
+            <li class="list"><img src="gambar5.jpg" alt="logo" width="40px" height="35px" title="logo" class="gambar"></li>
+            <li class="navbar-aska">
+                <a class="navbar-aska" href="#">ASKA</a>
+            </li>
+            <li class="navbar-login">
+                <a class="navbar-login" href="#login">LOGIN</a>
+            </li>
+        </ul>
+    </div>
+    <br>
+    
+
+    <form action="">
+        <table border="0" align="center" cellspacing="5" cellpadding="6">
+            <tr id="login">
+                <td class="login" colspan="3" class="login">LOGIN</td>
+            </tr>
+            <tr>
+                <td>
+                    <label class="label"  for="us">username</label>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="text" id="us">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label class="label" for="password">password</label>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="password" id="password">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <input type="radio" name="jeniskelamin" id="pria" class="radio"><label for="pria">pria</label>
+                    <input type="radio" name="jeniskelamin" id="wanita" class="radio"><label for="wanita">wanita</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <button type="submit">
+                        <a class="hyperlink" href="index1.html" target="_blank">kirim</a>
+                    </button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+
+
+
+
+
+   
+
+
+
+    
+    
+</body>
+</html>
